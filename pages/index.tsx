@@ -32,7 +32,7 @@ export default function Home() {
             </div>
               <button onClick={signInWithKakao}>Sign in with Kakao</button>
             </div>
-          
+
         ) : (
           <div
             className="w-full h-full flex flex-col justify-center items-center p-4"
