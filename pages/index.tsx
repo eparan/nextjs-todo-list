@@ -30,8 +30,8 @@ export default function Home() {
                 <Auth supabaseClient={supabase} appearance={{ theme: ThemeSupa }} theme="dark" />
               </div>
             </div>
-          </div>
-          <button onClick={signInWithKakao}>Sign in with Kakao</button>
+              <button onClick={signInWithKakao}>Sign in with Kakao</button>
+            </div>
           
         ) : (
           <div
