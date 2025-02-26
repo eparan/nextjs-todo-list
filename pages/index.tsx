@@ -7,6 +7,10 @@ export default function Home() {
   const session = useSession()
   const supabase = useSupabaseClient()
 
+  const signInWithKakao = async () => {
+    await supabase.auth.signInWithOAuth({ provider: 'kakao' })
+  }
+
   return (
     <>
       <Head>
@@ -27,6 +31,8 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <button onClick={signInWithKakao}>Sign in with Kakao</button>
+          
         ) : (
           <div
             className="w-full h-full flex flex-col justify-center items-center p-4"
